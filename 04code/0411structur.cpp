@@ -27,9 +27,13 @@ int main(){
     cout << guest.name << endl;
     cout << &pal << endl;
     cout << pal.name << endl;
+    
+    pal.name = pal.name + guest.name;
+    cout << &(pal.name) << endl;
+    cout << pal.name << endl;
 
+    pal.volume = pal.volume + guest.volume;
+    cout << &(pal.volume) << endl;
+    cout << pal.volume << endl;
     return 0;
-
-
-
 }
