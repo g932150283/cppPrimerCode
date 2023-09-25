@@ -9,6 +9,21 @@ int main()
 
     p_updates = &updates;   // assign address of int to pointer
 
+
+    int i = 4;
+    int* p_i;
+    p_i = &i;
+
+    cout << "value of i = " << i << endl;
+    cout << "value of *p_i " << *p_i << endl;
+
+    cout << "address of i = " << &i << endl;
+    cout << "address of p_i " << p_i << endl;
+    
+    cout << "now, *p_i = 1" << endl;
+    *p_i = 1;
+    cout << "value of i = " << i << endl;
+
 // express values two ways
     cout << "Values: updates = " << updates;
     cout << ", *p_updates = " << *p_updates << endl;
