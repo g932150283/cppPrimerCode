@@ -1,0 +1,4 @@
+Make and model : ex
+year : 1000
+was asking : 90.00
+now asking : 27.00
