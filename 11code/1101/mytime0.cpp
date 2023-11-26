@@ -44,6 +44,24 @@ Time Time::operator+(const Time & t) const{
     return sum;
 }
 
+Time Time::operator-(const Time & t) const{
+    Time diff;
+    int m1 = minutes + 60 * hours;
+    int m2 = t.minutes + 60 * t.hours;
+    int res = m1 - m2;
+    diff.minutes = res % 60;
+    diff.hours = res / 60;
+    return diff;
+}
+
+Time Time::operator*(double n) const{
+    Time res;
+    int m = minutes * n + 60 * hours * n;
+    res.minutes = m % 60;
+    res.hours = m / 60;
+    return res;
+}
+
 void Time::Show() const{
     cout << hours << " hours, " << minutes << " minutes" << endl;
 }

@@ -30,6 +30,14 @@ int main(){
     t1 = t1 + t;
     t1.Show();
 
+    Time t11 = Time(2,0);
+    Time t12 = Time(1,59);
+    cout << "=====show t11 - t12======" << endl;
+    Time res = t11 - t12;
+    res.Show();
+    cout << "=====show t12 * 2======" << endl;
+    res = t12 * 2;
+    res.Show();
 
 
     return 0;
