@@ -38,7 +38,9 @@ int main(){
     cout << "=====show t12 * 2======" << endl;
     res = t12 * 2;
     res.Show();
-
+    
+    res = 2 * t12 ;
+    cout << "=====show 2 * t12 ======\n" << res << endl;
 
     return 0;
 }
