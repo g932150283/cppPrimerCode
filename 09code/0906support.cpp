@@ -1,5 +1,3 @@
-// support.cpp -- use external variable
-// compile with external.cpp
 #include <iostream>
 extern double warming;  // use warming from another file
 
