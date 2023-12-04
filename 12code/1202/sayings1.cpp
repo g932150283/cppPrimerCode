@@ -50,5 +50,6 @@ int main(){
         cout << "No input! Bye.\n";
     // 12.4over
     // 1203
+    // 1204
     return 0;
 }
