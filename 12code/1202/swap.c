@@ -2,7 +2,7 @@
 
 void swap(/* 补全参数 */);
 
-int main ()
+int 1main ()
 {
     int a = 1;
     int b = 2;

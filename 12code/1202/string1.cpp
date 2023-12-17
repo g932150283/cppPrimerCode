@@ -81,20 +81,20 @@ ostream & operator<<(ostream & os, const String & st) {
     return os;
 }
 
-istream & operator>>(istream & is, String & st) {
-    char temp[String::CINLIM];
-    is.get(temp, String::CINLIM);
-    if (is){
-        st = temp;
-    }
-    while (is && is.get() != '\n')
-    {
-        continue;
-        /* code */
-    }
-    return is;
+// istream & operator>>(istream & is, String & st) {
+//     char temp[String::CINLIM];
+//     is.get(temp, String::CINLIM);
+//     if (is){
+//         st = temp;
+//     }
+//     while (is && is.get() != '\n')
+//     {
+//         continue;
+//         /* code */
+//     }
+//     return is;
     
-}
+// }
 
 istream & operator>>(istream & is, String & st)
 {
