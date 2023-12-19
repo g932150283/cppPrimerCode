@@ -10,7 +10,6 @@ public:
     Customer(){
         arrive = processtime = 0;
     }
-    ~Customer();
     void set(long when); // 何时到达
     long when() const{
         return arrive;

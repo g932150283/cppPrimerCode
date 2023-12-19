@@ -10,7 +10,7 @@ Queue::Queue(int qs) : qsize(qs){
 
 Queue::~Queue(){
     Node * temp;
-    while (rear != nullptr)
+    while (front != nullptr)
     {
         temp = front;
         front = front->next;
@@ -46,7 +46,6 @@ bool Queue::enqueue(const Item & item){
         rear->next = add;
     }
     rear = add;
-    delete add;
     return true;
 
 }
