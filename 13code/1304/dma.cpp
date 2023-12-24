@@ -81,6 +81,7 @@ hasDMA & hasDMA::operator=(const hasDMA & hs){
     if (this == &hs){
         return *this;
     }
+    baseDMA::operator=(hs);
     delete [] style;
     style = new char[strlen(hs.style) + 1];
     strcpy(style, hs.style);
