@@ -19,7 +19,7 @@ public:
     Student(const string & s, int n) : name(s), scores(n){}
     Student(const string & s, ArrayDb a) : name(s), scores(a){}
     Student(const char * str, const double * pd, int n) : name(str), scores(pd, n){}
-    ~Student();
+    ~Student(){}
     double Average() const;
     const string & Name() const;
     // 是否允许修改
@@ -40,16 +40,9 @@ public:
     // 友元函数，重载运算符
     friend istream & operator>>(istream & is, Student & stu);
     friend istream & getline(istream & is, Student & stu);
-    friend istream & operator<<(istream & is, const Student & stu);
+    friend ostream & operator<<(ostream & os, const Student & stu);
 };
 
-Student::Student(/* args */)
-{
-}
-
-Student::~Student()
-{
-}
 
 
 #endif

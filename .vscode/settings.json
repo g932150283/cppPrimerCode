@@ -53,6 +53,9 @@
         "list": "cpp",
         "map": "cpp",
         "unordered_set": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "bitset": "cpp",
+        "typeindex": "cpp",
+        "scoped_allocator": "cpp"
     }
 }
