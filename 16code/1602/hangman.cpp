@@ -27,6 +27,7 @@ int main()
     while (play == 'y')
     {
         string target = wordlist[std::rand() % NUM];
+        cout << "answer : " << target << endl;
         int length = target.length();
         string attempt(length, '-');
         string badchars;
